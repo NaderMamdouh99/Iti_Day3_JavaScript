@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab Day 3</title>
+    <link rel="stylesheet" href="/Css/Lab.css" />
+  </head>
+  <body onload="getLocalstorage()">
+    <!-- input text Key Down  -->
+    <div id="Time" style="text-align: center"></div>
+    <label for="textbox">Creat input</label>
+    <input
+      type="text"
+      id="textbox"
+      onkeydown="TestKeyDown(event)"
+      onmousedown="TestMouse(event)"
+    />
+    <hr />
+    <br />
+    <button id="Start">Start Clock</button>
+    <button id="STOP">Stop Clock</button>
+    <hr />
+
+    <br />
+    <!-- Form for login and test First Name -->
+    <form method="get">
+      <fieldset>
+        <legend>Login Form</legend>
+        <label for="First Name">
+          First Name: <input type="text" onkeydown="Check(event)" />
+          <br />
+        </label>
+        <label for="UserName">
+          User Name
+          <input
+            type="text"
+            name="UesrName"
+            placeholder="Enter your user name here"
+            id="Name"
+            style="margin: 5px"
+          />
+        </label>
+        <br />
+        <label for="Passowrd">
+          Passowrd
+          <input
+            type="password"
+            name="Passowrd"
+            placeholder="Enter Your Password"
+            style="margin: 5px"
+            id="Passowrd"
+          />
+        </label>
+        <br />
+        <input type="checkbox" onclick="RemberMe()" />
+        <br />
+        <input type="checkbox" />
+        <a href="#" onclick="settimelink()">I agree to Terms and conditions</a>
+        <input
+          type="submit"
+          value="Login"
+          onclick="openWindow()"
+          style="margin: 10px"
+        />
+        <br />
+        <button onclick="CloseWindow()">Close Window</button>
+      </fieldset>
+    </form>
+    <script src="/js/Lab.js"></script>
+  </body>
+</html>
